@@ -1,0 +1,17 @@
+<h3>Sale Table</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Quantity</th>
+            <th>Bill Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let s of saleList'>
+            <td>{{s.prdId}}</td>
+            <td>{{s.qty}}</td>
+            <td>{{s.billAmount|currency:'INR'}}</td>
+        </tr>
+    </tbody>
+</table>

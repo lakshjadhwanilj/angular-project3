@@ -1,0 +1,17 @@
+<h3>Product Table</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let p of prdList'>
+            <td>{{p.prdId}}</td>
+            <td>{{p.prdName}}</td>
+            <td>{{p.prdPrice|currency:'INR'}}</td>
+        </tr>
+    </tbody>
+</table>
